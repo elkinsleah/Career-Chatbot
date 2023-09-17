@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+    
+    <button>
+        <text>Return to main menu</text>
+        <postback>main</postback>
+    </button>
+</category>
+</aiml>

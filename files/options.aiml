@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <!-- Career path options -->
+    
+    <category>
+        <pattern>options</pattern>
+        <template>
+            
+            <delay>1</delay>
+            
+            Click on the links below for more information about each career:
+            
+            <link>
+                <text>👩‍💻 Software Developer</text>
+                <url>https://www.coursera.org/articles/how-to-become-a-software-developer</url>
+            </link>
+            
+            <link>
+                <text>📊 Data Scientist</text>
+                <url>https://www.coursera.org/articles/what-is-a-data-scientist</url>
+            </link>
+            
+            <link>
+                <text>📂 Database Administrator</text>
+                <url>https://www.coursera.org/articles/database-administrator</url>
+            </link>
+            
+            <link>
+                <text>🖥️ System Administrator</text>
+                <url>https://www.coursera.org/articles/what-is-a-system-administrator-a-career-guide</url>
+            </link>
+            
+            <link>
+                <text>🌐 Network Administrator</text>
+                <url>https://www.coursera.org/articles/what-is-a-network-administrator-a-career-guide</url>
+            </link>
+            
+            <link>
+                <text>🎮 Video Game Developer</text>
+                <url>https://www.coursera.org/articles/game-developer</url>
+            </link>
+            
+            <link>
+                <text>🧑‍💼 Project Manager</text>
+                <url>https://www.coursera.org/articles/what-is-project-manager</url>
+            </link>
+            
+            <!-- Return to main menu -->
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>main</postback>
+            </button>
+
+        </template>
+    </category>
+    
+</aiml>

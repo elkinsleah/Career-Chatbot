@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        
+        <!-- Career Quiz -->
+        
+        <pattern>quiz</pattern>
+        <template>
+            <delay>1</delay>
+            Welcome to the Career Path Quiz! 📝<break/>
+            You will be asked a series of questions about your personal interests
+            and strengths to determine a career that best suits you! <break/>
+            Are you ready to begin?
+            
+            <button>
+                <text>Yes!</text>
+                <postback>yes</postback>
+            </button>
+            
+            <button>
+                <text>No, return to main menu</text>
+                <postback>main</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Quiz Beginning -->
+
+    <category>
+        <pattern>yes</pattern>
+        <template>
+            
+           📝 Quiz beginning: <split/>
+           Do you enjoy writing code?
+           
+           <button>
+               <text>Yes</text>
+               <postback>yescode</postback>
+           </button>
+           
+           <button>
+               <text>No</text>
+               <postback>nocode</postback>
+           </button>
+           
+        </template>
+    </category>
+    
+    <!-- Yes Code -->
+    
+    <category>
+        <pattern>yescode</pattern>
+        <template>
+            
+            Which would you consider one of your strengths?
+            
+            <button>
+                <text>Creativity</text>
+                <postback>creative</postback>
+            </button>
+            
+            <button>
+                <text>Attention to detail</text>
+                <postback>detail</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Creative -->
+    
+    <category>
+        <pattern>creative</pattern>
+        <template>
+            
+            Which would you rather do?
+            
+            <button>
+                <text>Create apps, websites, or software</text>
+                <postback>nogames</postback>
+            </button>
+            
+            <button>
+                <text>Create and design games</text>
+                <postback>games</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Software Developer -->
+    
+    <category>
+        <pattern>nogames</pattern>
+        <template>
+            
+            You should become a
+            
+            <link>
+                <text>Software Developer!</text>
+                <url>https://www.coursera.org/articles/how-to-become-a-software-developer</url>
+            </link>
+            
+            <button>
+                <text>Take quiz again</text>
+                <postback>yes</postback>
+            </button>
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>main</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Video Game Developer -->
+    
+    <category>
+        <pattern>games</pattern>
+        <template>
+            
+            You should become a 
+            
+            <link>
+                <text>Video Game Developer!</text>
+                <url>https://www.coursera.org/articles/game-developer</url>
+            </link>
+            
+            <button>
+                <text>Take quiz again</text>
+                <postback>yes</postback>
+            </button>
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>menu</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Data Scientist -->
+    
+    <category>
+        <pattern>detail</pattern>
+        <template>
+            
+            You shoulde become a
+            
+            <link>
+                <text>Data Scientist!</text>
+                <url>https://www.coursera.org/articles/what-is-a-data-scientist</url>
+            </link>
+            
+            <button>
+                <text>Take quiz again</text>
+                <postback>yes</postback>
+            </button>
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>main</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- No Code -->
+    
+    <category>
+        <pattern>nocode</pattern>
+        <template>
+            
+            Which would you consider one of your strengths?
+            
+            <button>
+                <text>Attention to Detail</text>
+                <postback>attention</postback>
+            </button>
+            
+            <button>
+                <text>Communicating with others</text>
+                <postback>communicate</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Attention to Detail -->
+    
+    <category>
+        <pattern>attention</pattern>
+        <template>
+            
+            Which would you rather work with?
+            
+            <button>
+                <text>Data and storage</text>
+                <postback>database</postback>
+            </button>
+            
+            <button>
+                <text>Computer networks</text>
+                <postback>network</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Database Administrator -->
+    
+    <category>
+        <pattern>database</pattern>
+        <template>
+            
+            You should become a 
+            
+            <link>
+                <text>Database Administrator!</text>
+                <url>https://www.coursera.org/articles/database-administrator</url>
+            </link>
+            
+            <button>
+                <text>Take quiz again</text>
+                <postback>yes</postback>
+            </button>
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>main</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Network Administrator -->
+    
+    <category>
+        <pattern>network</pattern>
+        <template>
+            
+            You should become a 
+            
+            <link>
+                <text>Network Administrator!</text>
+                <url>https://www.coursera.org/articles/what-is-a-network-administrator-a-career-guide</url>
+            </link>
+            
+            <button>
+                <text>Take quiz again</text>
+                <postback>yes</postback>
+            </button>
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>main</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Communicate -->
+    
+    <category>
+        <pattern>communicate</pattern>
+        <template>
+            
+            Would you rather work mostly with people or computer hardware/software?
+            
+            <button>
+                <text>People</text>
+                <postback>manager</postback>
+            </button>
+            
+            <button>
+                <text>Computer Hardware/Software</text>
+                <postback>sysadmin</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Systems Administrator -->
+    
+    <category>
+        <pattern>sysadmin</pattern>
+        <template>
+            
+            You should become a 
+            
+            <link>
+                <text>System Administrator!</text>
+                <url>https://www.coursera.org/articles/what-is-a-system-administrator-a-career-guide</url>
+            </link>
+            
+            <button>
+                <text>Take quiz again</text>
+                <postback>yes</postback>
+            </button>
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>main</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <!-- Project Manager -->
+    
+    <category>
+        <pattern>manager</pattern>
+        <template>
+            
+            You should become a
+            
+            <link>
+                <text>Project Manager!</text>
+                <url>https://www.coursera.org/articles/what-is-project-manager</url>
+            </link>
+            
+            <button>
+                <text>Take quiz again</text>
+                <postback>yes</postback>
+            </button>
+            
+            <!-- Return to main menu -->
+            
+            <button>
+                <text>Return to main menu</text>
+                <postback>main</postback>
+            </button>
+            
+        </template>
+    </category>
+
+    
+</aiml>
